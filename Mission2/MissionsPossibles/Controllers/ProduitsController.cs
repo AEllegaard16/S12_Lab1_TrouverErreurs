@@ -23,8 +23,8 @@ namespace Mission.Controllers
         // GET: Produits
         public async Task<IActionResult> Index()
         {
-            // COMPLÉTER ICI
-            return View();
+            IList<Produit> produits = await _context.Produits.ToListAsync();
+            return View(produits);
         }
 
     }
