@@ -20,7 +20,7 @@ namespace Mission.Models
         public int CategorieId { get; set; }
       
         [ValidateNever]
-        public Categorie Categorie { get; set; }
+        public virtual Categorie Categorie { get; set; }
 
 
     }

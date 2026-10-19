@@ -49,7 +49,6 @@ namespace Mission.Controllers
         // GET: Produits/Create
         public IActionResult Create()
         {
-         
             return View();
         }
 
@@ -66,7 +65,6 @@ namespace Mission.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-           
             return View(produit);
         }
 

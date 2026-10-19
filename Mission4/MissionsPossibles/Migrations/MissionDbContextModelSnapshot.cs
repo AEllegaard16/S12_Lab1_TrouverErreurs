@@ -18,6 +18,9 @@ namespace Mission.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.10")
+                .HasAnnotation("Proxies:ChangeTracking", false)
+                .HasAnnotation("Proxies:CheckEquality", false)
+                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -95,7 +98,7 @@ namespace Mission.Migrations
                         {
                             Id = 1,
                             CategorieId = 3,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4834),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(1899),
                             Description = "Long-Sleeve Logo Jersey, S",
                             PrixVente = 38m
                         },
@@ -103,7 +106,7 @@ namespace Mission.Migrations
                         {
                             Id = 2,
                             CategorieId = 3,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4853),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(1927),
                             Description = "Long-Sleeve Logo Jersey, M",
                             PrixVente = 38m
                         },
@@ -111,7 +114,7 @@ namespace Mission.Migrations
                         {
                             Id = 3,
                             CategorieId = 1,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4867),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(1948),
                             Description = "HL Road Frame - Red, 62",
                             PrixVente = 868m
                         },
@@ -119,7 +122,7 @@ namespace Mission.Migrations
                         {
                             Id = 4,
                             CategorieId = 1,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4881),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(1968),
                             Description = "HL Road Frame - Red, 44",
                             PrixVente = 870m
                         },
@@ -127,7 +130,7 @@ namespace Mission.Migrations
                         {
                             Id = 5,
                             CategorieId = 1,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4895),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(1988),
                             Description = "LL Road Frame - Red, 44",
                             PrixVente = 870m
                         },
@@ -135,7 +138,7 @@ namespace Mission.Migrations
                         {
                             Id = 6,
                             CategorieId = 1,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4914),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2012),
                             Description = "Road-150 Red, 62",
                             PrixVente = 2171m
                         },
@@ -143,7 +146,7 @@ namespace Mission.Migrations
                         {
                             Id = 7,
                             CategorieId = 1,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4928),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2032),
                             Description = "Road-150 Red, 44",
                             PrixVente = 2171m
                         },
@@ -151,7 +154,7 @@ namespace Mission.Migrations
                         {
                             Id = 8,
                             CategorieId = 4,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4942),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2053),
                             Description = "LL Headset",
                             PrixVente = 16m
                         },
@@ -159,7 +162,7 @@ namespace Mission.Migrations
                         {
                             Id = 9,
                             CategorieId = 2,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4956),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2074),
                             Description = "LL Mountain Handlebars",
                             PrixVente = 19m
                         },
@@ -167,7 +170,7 @@ namespace Mission.Migrations
                         {
                             Id = 10,
                             CategorieId = 2,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(4992),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2094),
                             Description = "LL Mountain Front Wheel",
                             PrixVente = 27m
                         },
@@ -175,7 +178,7 @@ namespace Mission.Migrations
                         {
                             Id = 11,
                             CategorieId = 3,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5006),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2115),
                             Description = "Classic Vest, M",
                             PrixVente = 24m
                         },
@@ -183,7 +186,7 @@ namespace Mission.Migrations
                         {
                             Id = 12,
                             CategorieId = 4,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5019),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2180),
                             Description = "ML Road Seat/Saddle",
                             PrixVente = 50m
                         },
@@ -191,7 +194,7 @@ namespace Mission.Migrations
                         {
                             Id = 13,
                             CategorieId = 1,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5033),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2201),
                             Description = "Mountain-500 Silver, 40",
                             PrixVente = 308m
                         },
@@ -199,7 +202,7 @@ namespace Mission.Migrations
                         {
                             Id = 14,
                             CategorieId = 1,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5047),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2221),
                             Description = "Mountain-500 Silver, 42",
                             PrixVente = 308m
                         },
@@ -207,7 +210,7 @@ namespace Mission.Migrations
                         {
                             Id = 15,
                             CategorieId = 4,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5060),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2240),
                             Description = "LL Bottom Bracket",
                             PrixVente = 22m
                         },
@@ -215,7 +218,7 @@ namespace Mission.Migrations
                         {
                             Id = 16,
                             CategorieId = 4,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5074),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2260),
                             Description = "ML Bottom Bracket",
                             PrixVente = 22m
                         },
@@ -223,7 +226,7 @@ namespace Mission.Migrations
                         {
                             Id = 17,
                             CategorieId = 2,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5087),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2279),
                             Description = "Rear Brakes",
                             PrixVente = 47m
                         },
@@ -231,7 +234,7 @@ namespace Mission.Migrations
                         {
                             Id = 18,
                             CategorieId = 3,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5102),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2299),
                             Description = "Racing Socks, M",
                             PrixVente = 4m
                         },
@@ -239,7 +242,7 @@ namespace Mission.Migrations
                         {
                             Id = 19,
                             CategorieId = 3,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5116),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2318),
                             Description = "Racing Socks, L",
                             PrixVente = 4m
                         },
@@ -247,7 +250,7 @@ namespace Mission.Migrations
                         {
                             Id = 20,
                             CategorieId = 4,
-                            DateCreation = new DateTime(2024, 10, 10, 17, 33, 54, 570, DateTimeKind.Local).AddTicks(5130),
+                            DateCreation = new DateTime(2026, 10, 19, 15, 58, 59, 276, DateTimeKind.Local).AddTicks(2337),
                             Description = "Hydration Pack - 70 oz.",
                             PrixVente = 21m
                         });

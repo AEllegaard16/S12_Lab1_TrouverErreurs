@@ -13,6 +13,6 @@ namespace Mission.Models
 
         //propriété de navigation
         [ValidateNever]
-        public IList<Produit> Produits { get; set; }
+        public virtual IList<Produit> Produits { get; set; }
     }
 }
