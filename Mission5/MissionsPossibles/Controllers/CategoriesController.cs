@@ -61,7 +61,7 @@ namespace Mission.Controllers
             {
                 _context.Add(categorie);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return this.RedirectToAction("Index");
             }
             return View(categorie);
         }
@@ -103,7 +103,7 @@ namespace Mission.Controllers
                     _context.Categories.Update(categorie);
                 }
                 _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
+                return this.RedirectToAction("Index");
             }
             return View(categorie);
         }
